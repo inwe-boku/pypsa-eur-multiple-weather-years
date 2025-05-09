@@ -20,7 +20,7 @@ scenario:
   planning_horizons:
   - 2030
 
-countries: ['BE']
+countries: ['AT']
 
 snapshots:
   start: "2013-03-01"
@@ -34,7 +34,7 @@ electricity:
     Store: [H2]
     Link: [H2 pipeline]
 
-  renewable_carriers: [solar, solar-hsat, onwind, offwind-ac, offwind-dc, offwind-float]
+  renewable_carriers: [solar, solar-hsat, onwind]
 
 atlite:
   default_cutout: be-03-2013-era5
