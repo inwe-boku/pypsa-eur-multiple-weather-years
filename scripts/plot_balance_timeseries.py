@@ -24,6 +24,8 @@ logger = logging.getLogger(__name__)
 def plot_stacked_area_steplike(
     ax: plt.Axes, df: pd.DataFrame, colors: dict | pd.Series = {}
 ):
+    if df.empty:
+        return
     """Plot stacked area chart with step-like transitions."""
     if isinstance(colors, pd.Series):
         colors = colors.to_dict()
@@ -75,6 +77,8 @@ def plot_energy_balance_timeseries(
     mean_threshold: float = 0.0,
     directory="",
 ):
+    if df.empty:
+        return
     """Create energy balance time series plot with positive/negative stacked areas."""
     if time is not None:
         df = df.loc[time]
