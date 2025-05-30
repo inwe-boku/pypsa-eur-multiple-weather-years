@@ -62,7 +62,6 @@ plotting:
     - methanol
     - oil
     - co2 stored
-    - urban central heat
     utilisation_rate:
     - solar
     - solar rooftop
@@ -102,10 +101,9 @@ plotting:
     - AC
     - H2
     - gas
-    - oil
-    - methanol
+    # - oil
+    # - methanol
     - co2 stored
-    - urban central heat
     AC:
       unit: TWh
       unit_conversion: 1_000_000
@@ -170,76 +168,76 @@ plotting:
       branch_sizes:
       - 5
       - 2
-    urban central heat:
-      unit: TWh
-      unit_conversion: 1_000_000
-      cmap: Oranges
-      vmin:
-      vmax:
-      region_unit: €/MWh
-      bus_factor: 0.005
-      branch_factor: 0.1
-      flow_factor: 100
-      bus_sizes:
-      - 300
-      - 100
-      branch_sizes:
-    methanol:
-      unit: TWh
-      unit_conversion: 1_000_000
-      cmap: Greens
-      vmin:
-      vmax:
-      region_unit: €/MWh
-      bus_factor: 0.005
-      branch_factor: 0.1
-      flow_factor: 100
-      bus_sizes:
-      - 20
-      - 10
-      branch_sizes:
-    biogas:
-      unit: TWh
-      unit_conversion: 1_000_000
-      cmap: Greens
-      vmin:
-      vmax:
-      region_unit: €/MWh
-      bus_factor: 0.1
-      branch_factor: 0.1
-      flow_factor: 100
-      bus_sizes:
-      - 100
-      - 50
-      branch_sizes:
-    solid biomass:
-      unit: TWh
-      unit_conversion: 1_000_000
-      cmap: Greens
-      vmin:
-      vmax:
-      region_unit: €/MWh
-      bus_factor: 0.01
-      branch_factor: 0.1
-      flow_factor: 100
-      bus_sizes:
-      - 100
-      - 50
-      branch_sizes:
-    oil:
-      unit: TWh
-      unit_conversion: 1_000_000
-      cmap: Greys
-      vmin:
-      vmax:
-      region_unit: €/MWh
-      bus_factor: 0.002
-      branch_factor: 0.01
-      flow_factor: 100
-      bus_sizes:
-      - 200
-      - 100
-      branch_sizes:
+    # urban central heat:
+    #   unit: TWh
+    #   unit_conversion: 1_000_000
+    #   cmap: Oranges
+    #   vmin:
+    #   vmax:
+    #   region_unit: €/MWh
+    #   bus_factor: 0.005
+    #   branch_factor: 0.1
+    #   flow_factor: 100
+    #   bus_sizes:
+    #   - 300
+    #   - 100
+    #   branch_sizes:
+    # methanol:
+    #   unit: TWh
+    #   unit_conversion: 1_000_000
+    #   cmap: Greens
+    #   vmin:
+    #   vmax:
+    #   region_unit: €/MWh
+    #   bus_factor: 0.005
+    #   branch_factor: 0.1
+    #   flow_factor: 100
+    #   bus_sizes:
+    #   - 20
+    #   - 10
+    #   branch_sizes:
+    # biogas:
+    #   unit: TWh
+    #   unit_conversion: 1_000_000
+    #   cmap: Greens
+    #   vmin:
+    #   vmax:
+    #   region_unit: €/MWh
+    #   bus_factor: 0.1
+    #   branch_factor: 0.1
+    #   flow_factor: 100
+    #   bus_sizes:
+    #   - 100
+    #   - 50
+    #   branch_sizes:
+    # solid biomass:
+    #   unit: TWh
+    #   unit_conversion: 1_000_000
+    #   cmap: Greens
+    #   vmin:
+    #   vmax:
+    #   region_unit: €/MWh
+    #   bus_factor: 0.01
+    #   branch_factor: 0.1
+    #   flow_factor: 100
+    #   bus_sizes:
+    #   - 100
+    #   - 50
+    #   branch_sizes:
+    # oil:
+    #   unit: TWh
+    #   unit_conversion: 1_000_000
+    #   cmap: Greys
+    #   vmin:
+    #   vmax:
+    #   region_unit: €/MWh
+    #   bus_factor: 0.002
+    #   branch_factor: 0.01
+    #   flow_factor: 100
+    #   bus_sizes:
+    #   - 200
+    #   - 100
+    #   branch_sizes:
 
   nice_names:
     OCGT: "Open-Cycle Gas"
