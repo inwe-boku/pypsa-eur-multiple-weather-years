@@ -893,6 +893,9 @@ def attach_GEM_renewables(
 
     for fueltype, carrier in tech_map.items():
         fn = smk_inputs.get(f"class_regions_{carrier}")
+        if fn == None: 
+            logger.warning(f"Variable fn is None for carrier {carrier}. Passing carrier.")
+            continue
         class_regions = gpd.read_file(fn)
 
         df_fueltype = df.query("Fueltype == @fueltype")
