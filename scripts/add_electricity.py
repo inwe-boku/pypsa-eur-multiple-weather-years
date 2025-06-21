@@ -903,6 +903,9 @@ def attach_GEM_renewables(
 
     for fueltype, carrier in tech_map.items():
         fn = smk_inputs.get(f"class_regions_{carrier}")
+        if fn == None:
+            logger.warning(f"Datasource for carrier '{carrier}' ist not available. Passing carrier.")
+            continue
         class_regions = gpd.read_file(fn)
 
         df_fueltype = df.query("Fueltype == @fueltype")
